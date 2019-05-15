@@ -9,9 +9,9 @@ int main() {
 
   auto filelog = spdlog::basic_logger_mt("sample-logger", "sample-log.txt");
 
-  filelog.get()->info("Sample Info output.");
-  filelog.get()->warn("Sample Warn output.");
-  filelog.get()->error("Sample Error output.");
+  filelog->info("Sample Info output.");
+  filelog->warn("Sample Warn output.");
+  filelog->error("Sample Error output.");
 
   return 0;
 }
